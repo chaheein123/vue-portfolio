@@ -1,6 +1,8 @@
 .top-component {
   background-color: orange;
   height: 100vh;
+  min-height: 580px;
+  position: relative;
 
   @keyframes starsmovement {
     from {
@@ -28,45 +30,49 @@
   .star-cluster {
     border-left: 1px black solid;
     border-bottom: 1px black solid;
-    position: relative;
+    position: absolute;
     display: inline-block;
     width: 20%;
-    top: 50%;
-    left: 60%;
+    top: 66%;
+    left: 71%;
     height: 20%;
     transform: rotate(-30deg);
-
+    
     .star-cluster-top {
       left: -8px;
       top: -6px;
     }
-
+  
     .star-cluster-bottom {
       display: inline-block;
       top: 100%;
       left: -8px;
       transform: translateY(-7px);
     }
-
+  
     .star-cluster-right {
       display: inline-block;
       left: 100%;
       top: 100%;
       transform: translate(-5px,-8px);
     }
-
-    .star-cluster-line {
-      height: 100%;
-      width: 200%;
-      border-top: 1px black solid;
-      position: absolute;
-      transform: rotate(-28deg);
-     
-
-
-    }
   };
 
-  
+  .star-cluster-line {
+    position: absolute;
+    border: 1px black solid;
+    height: 100%;
+    width: 100%;
 
+    .star-actual-line {
+      position: absolute;
+      height: 100%;
+      border: 1px black solid;
+      width: 110%;
+      transform: rotate(-55deg);
+      transform-origin: bottom left;
+      min-width: 500px;
+
+    }
+  }
 }
