@@ -1,0 +1,72 @@
+.top-component {
+  background-color: orange;
+  height: 100vh;
+
+  @keyframes starsmovement {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(1.7);
+    }
+  }
+
+  .stars {
+    position: absolute;
+    clip-path: polygon(53% 0, 64% 41%, 100% 53%, 63% 62%, 55% 86%, 50% 100%, 45% 82%, 41% 63%, 0 53%, 42% 40%);
+    background-color: rgb(251, 255, 0);
+    height: 14px;
+    width: 14px;
+  }
+
+  .stars-animate {
+    animation: starsmovement 1s linear infinite;
+    animation-direction: alternate;
+  }
+
+  .star-cluster {
+    border-left: 1px black solid;
+    border-bottom: 1px black solid;
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    top: 50%;
+    left: 60%;
+    height: 20%;
+    transform: rotate(-30deg);
+
+    .star-cluster-top {
+      left: -8px;
+      top: -6px;
+    }
+
+    .star-cluster-bottom {
+      display: inline-block;
+      top: 100%;
+      left: -8px;
+      transform: translateY(-7px);
+    }
+
+    .star-cluster-right {
+      display: inline-block;
+      left: 100%;
+      top: 100%;
+      transform: translate(-5px,-8px);
+    }
+
+    .star-cluster-line {
+      height: 100%;
+      width: 200%;
+      border-top: 1px black solid;
+      position: absolute;
+      transform: rotate(-28deg);
+     
+
+
+    }
+  };
+
+  
+
+}
