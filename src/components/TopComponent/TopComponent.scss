@@ -1,5 +1,5 @@
 .top-component {
-  background-color: orange;
+  background-color: black;
   height: 100vh;
   min-height: 580px;
   position: relative;
@@ -28,8 +28,8 @@
   }
 
   .star-cluster {
-    border-left: 1px black solid;
-    border-bottom: 1px black solid;
+    border-left: 1px rgb(251, 255, 0) solid;
+    border-bottom: 1px rgb(251, 255, 0) solid;
     position: absolute;
     display: inline-block;
     width: 20%;
@@ -37,7 +37,7 @@
     left: 71%;
     height: 20%;
     transform: rotate(-30deg);
-    
+
     .star-cluster-top {
       left: -8px;
       top: -6px;
@@ -60,19 +60,63 @@
 
   .star-cluster-line {
     position: absolute;
-    border: 1px black solid;
     height: 100%;
     width: 100%;
 
     .star-actual-line {
       position: absolute;
       height: 100%;
-      border: 1px black solid;
+      border-bottom: 1px rgb(251, 255, 0) solid;
       width: 110%;
       transform: rotate(-55deg);
       transform-origin: bottom left;
       min-width: 500px;
 
+      .star-actual-star {
+        display: inline-block;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 100%;
+        top: 100%;
+        transform: translate(-15px, -15px);
+      }
+
+      .star-actual-text-wrapper {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-100px,-100%);
+        font-size: 24px;
+        letter-spacing: 3px;
+        color: rgb(251, 255, 0);
+        width: 300px;
+      }
     }
+  }
+
+  .star-1 {
+    left: 3%;
+    top: 2%;
+  }
+
+  .star-2 {
+    left: 10%;
+    top: 90%;
+  }
+
+  .star-3 {
+    left: 14%;
+    top: 45%;
+  }
+
+  .star-4 {
+    left: 50%;
+    top: 24%;
+  }
+
+  .star-5 {
+    left: 45%;
+    top: 89%;
   }
 }
