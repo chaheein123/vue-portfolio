@@ -173,8 +173,7 @@
     }
 
     .saturn-around {
-      // background-color: rgb(251, 255, 0);
-      box-shadow: 0 0 4px rgb(88, 231, 5);
+      box-shadow: 0 0 4px rgb(52, 50, 61);
       background-image: linear-gradient(to bottom right, rgb(240, 178, 178), rgb(163, 127, 127));
       position: absolute;
       width: 1vw;
@@ -211,7 +210,7 @@
       min-width: 140px;
       min-height: 140px;
       background-color: rgb(251, 255, 0);
-      box-shadow: 0 0px 60px rgb(251, 255, 0);
+      box-shadow: 0 0px 20px rgb(251, 255, 0);
       background-image: url("../../assets/img/my-selfie.jpg");
       background-size: cover;
     }

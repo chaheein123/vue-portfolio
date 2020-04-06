@@ -3,13 +3,15 @@
 <script>
 import TopComponent from "../../components/TopComponent/TopComponent.vue";
 import NavComponent from "../../components/NavComponent/NavComponent.vue";
+import AboutComponent from "../../components/AboutComponent/AboutComponent.vue";
 
 export default {
   name: "MainPage",
 
   components: {
     TopComponent,
-    NavComponent
+    NavComponent,
+    AboutComponent,
   },
 
   data: () => ({

@@ -1,0 +1,227 @@
+.about-section {
+  margin-top: 110px;
+  text-align: center;
+
+  h1 {
+    border-bottom: 3px rgb(19, 128, 95) solid;
+    display: inline-block;
+  }
+
+  .about-container {
+    padding-top: 50px;
+  }
+
+  .about-each-heading {
+    position: relative;
+    top: -20px;
+  }
+
+  .about-each-p {
+    position: relative;
+    top: -20px;
+  }
+
+  .hexagons{
+    position: relative;
+    height: 168px;
+    width: 168px;
+    background-image: url(../../assets/img/hexagonicons.png);
+    background-size: cover;
+    display: inline-block;
+
+
+    .hexagon-img {
+      position: absolute;
+      display: inline-block;
+      margin: 1px auto;
+      top: 48%;
+      transform: translate(-50%, -50%);
+      width: 64px;
+      height: 64px;
+      background-size: cover;
+    }
+
+    .responsive-icon {
+      background-image: url("../../assets/img/responsiveicon.png");
+    }
+
+    .rocket-icon {
+      background-image: url("../../assets/img/rocketicon.png");
+      transform: translate(-54%, -45%)
+    }
+
+    .friendly-icon {
+      background-image: url("../../assets/img/smiley.png")
+    }
+
+    .tools-icon {
+      background-image: url("../../assets/img/teamworkicon.png")
+    }
+
+  }
+ 
+  .cube-container{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    // border: 1px black solid;
+    margin: 0 auto;
+    padding-right: 10%;
+    width: 150px;
+    height: 150px;
+    perspective: 1400px;
+    // position: absolute;
+    will-change: transform;
+    z-index: 0;
+  }
+  #cube{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transform-style: preserve-3d;
+      transform: rotateX( -30deg ) rotateY( -30deg ); 
+  }
+  #cube .side{
+      width: 150px;
+      height: 150px;
+      display: block;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white; 
+      box-shadow: 0 0 100px 1px rgba(0,0,0, .2) inset;
+  }
+  #cube .back,
+  #cube .right,
+  #cube .left,
+  #cube .top,
+  #cube .bottom{
+      // background: darkorange;
+  }
+  #cube .front{
+    background-image: url("../../assets/img/reacticon.png");
+    background-size: cover;
+    background-color: black;
+  }
+
+  #cube .top {
+    background-image: url("../../assets/img/htmlcssicon.png");
+    background-size: cover;
+  }
+
+  #cube .back {
+    background-image: url("../../assets/img/vueicon.png");
+    background-size: cover;
+    background-color: white;
+  }
+
+  #cube .right {
+    background-image: url("../../assets/img/sqlicon.png");
+    background-size: cover;
+    background-color: skyblue;
+  }
+
+  #cube .bottom {
+    // background-color: rgb(153, 243, 130);
+    background-image: url("../../assets/img/typescripticon.png");
+    background-size: cover;
+  }
+
+  #cube .left {
+    background-color: rgb(16, 194, 16);
+    background-image: url("../../assets/img/nodejsicon.png");
+    background-size: cover;
+  }
+
+
+  #cube .front  { transform: rotateY(   0deg ) translateZ( 75px ); }
+  #cube .back   { transform: rotateX( 180deg ) translateZ( 75px ); }
+  #cube .right  { transform: rotateY(  90deg ) translateZ( 75px ); }
+  #cube .left   { transform: rotateY( -90deg ) translateZ( 75px ); }
+  #cube .top    { transform: rotateX(  90deg ) translateZ( 75px ); }
+  #cube .bottom { transform: rotateX( -90deg ) translateZ( 75px ); }
+  
+  #cube.show-right  { transform: translateZ( -10px ) rotateY( -90deg ); }
+  #cube.show-left   { transform: translateZ( -10px ) rotateY(  90deg ); }
+  #cube.show-top    { transform: translateZ( -10px ) rotateX( -90deg ); }
+  #cube.show-bottom { transform: translateZ( -10px ) rotateX(  90deg ); }
+  
+  /*########### ANIMATION ##########*/
+  
+  @keyframes spin{
+      0%   { transform: rotateX( 0deg )   rotateY( 0deg ); }
+      100% { transform: rotateX( 360deg ) rotateY( 360deg ); }
+  }
+
+  #cube{
+      animation: spin 8s infinite ease-out;
+      
+  }
+}
+
+.about-bottom {
+  margin-top: 50px;
+
+  .skill-bar-full {
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(241, 226, 226);
+    // margin: 20px;
+
+
+  }
+
+  .about-bottom-rows{
+    // height: 2000px;
+    // border: 1px black solid;
+    margin: 6px;
+
+  }
+  
+  .skill-bar-actual {
+    position: absolute;
+    height: 100%;
+    background-color: rgba(28, 121, 82, 0.658);
+  }
+
+  .skill-bar-name {
+    color: white;
+    position: absolute;
+    background-color: rgba(90, 187, 147, 0.897);
+    height: 100%;
+    width: 110px;
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .skill-bar-actual-html {
+    width: 90%;
+  }
+
+  .skill-bar-actual-js {
+    width: 85%;
+  }
+
+  .skill-bar-actual-react {
+    width: 80%;
+  }
+
+  .skill-bar-actual-angular {
+    width: 70%;
+  }
+
+  .skill-bar-actual-node {
+    width: 80%;
+  }
+
+  .skill-bar-actual-SQL {
+    width: 85%;
+  }
+
+}
