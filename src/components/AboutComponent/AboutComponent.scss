@@ -17,8 +17,11 @@
   }
 
   .about-each-p {
+    display: inline-block;
     position: relative;
     top: -20px;
+    // border: 1px black solid;
+    width: 60%;
   }
 
   .hexagons{
@@ -205,11 +208,11 @@
   }
 
   .skill-bar-actual-js {
-    width: 85%;
+    width: 78%;
   }
 
   .skill-bar-actual-react {
-    width: 80%;
+    width: 90%;
   }
 
   .skill-bar-actual-angular {
