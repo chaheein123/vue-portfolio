@@ -66,5 +66,10 @@
       transform-origin: right;
     }
   }
+}
 
+@media only screen and (max-width: 440px) {
+  .nav-component {
+    display: none;
+  }
 }
