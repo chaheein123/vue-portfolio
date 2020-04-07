@@ -1,0 +1,46 @@
+<div class="col-md-6">
+  <v-card class="mx-auto" max-width="370px" min-width="355">
+    <a :href="cardInfo.webAddress" target="_blank">
+      <img :src="cardInfo.imgUrl" height="200px" width="100%" class="project-card-img" />
+    </a>
+
+    <v-card-title>
+      {{cardInfo.title}}
+    </v-card-title>
+
+    <v-card-subtitle class="project-card-subtitle">
+      <div>
+        {{cardInfo.content}}
+      </div>
+    </v-card-subtitle>
+
+    <v-card-actions>
+      <a :href="cardInfo.githubAddress" target="_blank">
+        <v-btn text>
+          GibHub
+        </v-btn>
+      </a>
+
+      <a :href="cardInfo.youtubeAddress" target="_blank">
+        <v-btn color="error" text>
+          Youtube
+        </v-btn>
+      </a>
+      <v-spacer></v-spacer>
+
+      <v-btn icon @click="show = !show">
+        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+
+    <v-expand-transition>
+      <div v-show="show">
+        <v-divider></v-divider>
+
+        <v-card-text>
+          Technologies: {{cardInfo.technologies}}
+        </v-card-text>
+      </div>
+    </v-expand-transition>
+  </v-card>
+</div>
