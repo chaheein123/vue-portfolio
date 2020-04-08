@@ -26,7 +26,7 @@ export default {
         imgUrl: "/project2shot.png",
         webAddress: "https://iichoose.com/",
         content: "What should I eat for lunch? What should I wear? You have a problem choosing? Use this app then!",
-        technologies: "Vue.js, Yelp API, Unsplash.com API, Geolocation API",
+        technologies: "Vue.js, Express.js, Node.js, Yelp API, Unsplash.com API, Geolocation API",
         githubAddress: "https://github.com/chaheein123/iChoose-wheel",
         youtubeAddress: "https://www.youtube.com/watch?v=bMgdm3rmqKg",
       },

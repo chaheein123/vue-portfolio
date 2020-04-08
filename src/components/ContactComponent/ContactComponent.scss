@@ -1,0 +1,50 @@
+.form-wrapper {
+  padding-top: 110px;
+  text-align: center;
+  width: 90%;
+
+  .contact-header {
+    border-bottom: 3px rgb(19, 128, 95) solid;
+    display: inline-block;
+  }
+
+  .contact-form-wrapper {
+    margin-top: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.253);
+    padding: 20px;
+
+    .textfield-rows {
+      .textfield-cols {
+        padding: 0 10px;
+
+        .contact-form-details{
+          text-align: left;
+          padding: 20px 35px;
+          background-color: rgba(61, 54, 131, 0.938);
+          border-radius: 10px;
+          color: white;
+          font-family: "Comic Sans MS", cursive, sans-serif;
+          margin: 20px 0;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.383);
+
+          h2 {
+            margin-bottom: 10px;
+          }
+          .contact-form-details-email {
+            font-weight: bold;
+          }
+          .mdi-icons {
+            position: relative;
+            padding: 0;
+            left: -5px;
+            margin-right: 10px;
+          }
+        }
+      }
+      .button-wrapper {
+        margin: 20px 0;
+      }
+    }
+  }
+}
