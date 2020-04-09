@@ -66,10 +66,38 @@
       transform-origin: right;
     }
   }
+
+  .div-hamburger {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 440px) {
   .nav-component {
-    display: none;
+    padding-left: 6px;
+
+    .nav-component-ul {
+      display: none;
+    }
+    .div-hamburger {
+      position: absolute;
+      // border: 2px black solid;
+      border-radius: 4px;
+      height: 35px;
+      width: 45px;
+      display: flex;
+      flex-direction: column;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      justify-content: space-evenly;
+      cursor: pointer;
+
+      .hamburger-stacks {
+        margin: 0 auto;
+        border: 1px black solid;
+        width: 80%;
+      }
+    }
   }
 }

@@ -1,5 +1,5 @@
 <div class="col-md-6 card-wrapper" data-aos="zoom-in">
-  <v-card class="mx-auto project-cards" max-width="370px" min-width="240">
+  <v-card class="mx-auto project-cards" max-width="370px" min-width="230px">
     <a :href="cardInfo.webAddress" target="_blank">
       <img :src="cardInfo.imgUrl" height="200px" width="100%" class="project-card-img" />
     </a>
@@ -17,13 +17,19 @@
     <v-card-actions>
       <a :href="cardInfo.githubAddress" target="_blank">
         <v-btn text>
-          GibHub
+          CODE
         </v-btn>
       </a>
 
       <a :href="cardInfo.youtubeAddress" target="_blank">
         <v-btn color="error" text>
-          Youtube
+          VID
+        </v-btn>
+      </a>
+
+      <a :href="cardInfo.webAddress" target="_blank">
+        <v-btn color="primary" text>
+          WEB
         </v-btn>
       </a>
       <v-spacer></v-spacer>
