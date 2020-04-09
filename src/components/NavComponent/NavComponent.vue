@@ -11,6 +11,7 @@ export default {
       { title: 'Click Me' },
       { title: 'Click Me 2' },
     ],
+    hamburgerClicked:false
   }),
 }
 </script>

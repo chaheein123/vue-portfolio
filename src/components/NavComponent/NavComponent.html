@@ -1,4 +1,5 @@
 <div class="nav-component">
+  <div></div>
   <ul class="nav-component-ul">
     <li class="nav-component-lists">
       <a href="#aboutSection" style="text-decoration:none">|ABOUT|</a>
@@ -6,16 +7,35 @@
     <li class="nav-component-lists">
       <a href="#projectSection" style="text-decoration: none">|PROJECTS|</a>
     </li>
-
-
     <li class="nav-component-lists">
       <a href="#contactSection" style="text-decoration: none">|CONTACT|</a>
     </li>
   </ul>
 
-  <div class="div-hamburger">
+  <!-- Hamburger -->
+  <div class="div-hamburger" @click="hamburgerClicked=!hamburgerClicked">
     <div class="hamburger-stacks" />
     <div class="hamburger-stacks" />
     <div class="hamburger-stacks" />
+  </div>
+
+  <!-- Hamburger options -->
+  <div class="div-hamburger-options" v-if="hamburgerClicked">
+    <a href="#aboutSection" style="text-decoration:none" class="hamburger-sections-wrappers">
+      <div class="hamburger-sections">
+        ABOUT
+      </div>
+    </a>
+    <a href="#projectSection" style="text-decoration: none" class="hamburger-sections-wrappers">
+      <div class="hamburger-sections hamburger-white">
+        <span class="hamburger-texts">PROJECTS</span>
+      </div>
+    </a>
+
+    <a href="#contactSection" style="text-decoration: none" class="hamburger-sections-wrappers">
+      <div class="hamburger-sections">
+        CONTACT
+      </div>
+    </a>
   </div>
 </div>
