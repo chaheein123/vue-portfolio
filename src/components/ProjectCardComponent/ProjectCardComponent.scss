@@ -8,4 +8,12 @@
 
 .card-wrapper {
   margin-bottom: 50px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+
+  .project-cards {
+    display: inline-block;
+  }
+
 }
