@@ -30,4 +30,8 @@ export default {
 html {
   scroll-behavior: smooth;
 }
+
+a {
+  text-decoration: none;
+}
 </style>
